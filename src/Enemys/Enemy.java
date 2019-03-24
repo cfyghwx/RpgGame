@@ -1,6 +1,6 @@
-package Enemy;
+package Enemys;
 
-abstract public class Enemy {
+abstract public class Enemy implements Cloneable {
     int hp;
 
     int mp;
@@ -8,6 +8,8 @@ abstract public class Enemy {
     int atk;
 
     int def;
+
+    String Enemyname;
 
     abstract  public int Attack();
 }

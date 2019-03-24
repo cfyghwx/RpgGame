@@ -2,6 +2,7 @@ package People;
 
 import Equipment.Clothes.Clothes;
 import Equipment.Weapon.Weapon;
+import Equipment.abstractFactory.fresh_factory;
 import People.Career.Career;
 import People.Career.emei;
 import Skill.Skill;
@@ -16,19 +17,19 @@ public class Role {
 
     private int mp=100;
 
-    private int Atk=100;//æ”»å‡»åŠ›
+    private int Atk=100;//¹¥»÷Á¦
 
-    private int def=100;//é˜²å¾¡åŠ›
+    private int def=100;//·ÀÓùÁ¦
 
-    private int exp=0;//ç»éªŒå€¼
+    private int exp=0;//¾­ÑéÖµ
 
-    private int level=1;//ç­‰çº§
+    private int level=1;//µÈ¼¶
 
-    private int strength=10;//åŠ›é‡
+    private int strength=10;//Á¦Á¿
 
-    private int intl=10;//æ™ºåŠ›
+    private int intl=10;//ÖÇÁ¦
 
-    private int speed=10;//æ•æ·
+    private int speed=10;//Ãô½İ
 
     private Career RoleCareer;
 
@@ -44,10 +45,13 @@ public class Role {
         this.setRolename(username);
         this.setRoleCareer(usercareer);
         this.getRoleCareer().addshuxing(this);
+        fresh_factory ff=new fresh_factory();
+        this.setRoleWeapon(ff.CreateWeapon());
+        this.setRoleClothes(ff.CreateClothes());
     }
 
     /**
-     * ç”Ÿæˆå•ä¾‹æ¨¡å¼
+     * Éú³Éµ¥ÀıÄ£Ê½
      * @return
      */
     public static Role getRole(String username,Career c){
@@ -58,14 +62,14 @@ public class Role {
     }
 
     /**
-     * è·å–äººç‰©åŸºç¡€å±æ€§
+     * »ñÈ¡ÈËÎï»ù´¡ÊôĞÔ
      */
     public void getRolestats(){
         role.toString();
     }
 
     /**
-     *äººç‰©å‡çº§
+     *ÈËÎïÉı¼¶
      * @return
      */
     public void levelup(){
@@ -199,20 +203,20 @@ public class Role {
     @Override
     public String toString() {
         return "Role{" +
-                "è§’è‰²åç§°='" + Rolename + '\'' +
+                "½ÇÉ«Ãû³Æ='" + Rolename + '\'' +
                 ", hp=" + hp +
                 ", mp=" + mp +
                 ", Atk=" + Atk +
                 ", def=" + def +
-                ", ç»éªŒå€¼=" + exp +
-                ", ç­‰çº§=" + level +
-                ", åŠ›é‡=" + strength +
-                ", æ™ºåŠ›=" + intl +
-                ", é€Ÿåº¦=" + speed +
-                ", äººç‰©èŒä¸š=" + RoleCareer +
-                ", äººç‰©æ­¦å™¨=" + RoleWeapon +
-                ", äººç‰©è¡£æœ=" + RoleClothes +
-                ", æŠ€èƒ½=" + RoleSkill +
+                ", ¾­ÑéÖµ=" + exp +
+                ", µÈ¼¶=" + level +
+                ", Á¦Á¿=" + strength +
+                ", ÖÇÁ¦=" + intl +
+                ", ËÙ¶È=" + speed +
+                ", ÈËÎïÖ°Òµ=" + RoleCareer +
+                ", ÈËÎïÎäÆ÷=" + RoleWeapon +
+                ", ÈËÎïÒÂ·ş=" + RoleClothes +
+                ", ¼¼ÄÜ=" + RoleSkill +
                 '}';
     }
 }

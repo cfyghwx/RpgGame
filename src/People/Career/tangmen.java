@@ -8,7 +8,7 @@ import java.util.List;
 
 public class tangmen implements Career {
 
-    private String Careername="å”é—¨";
+    private String Careername="ÌÆÃÅ";
 
     private int Atk=80;
 
@@ -23,7 +23,7 @@ public class tangmen implements Career {
     private List<Skill> skilllistl;
 
     public tangmen(){
-        // TODO: 2019/3/24 æŠŠæŠ€èƒ½åŠ è¿›å»
+        // TODO: 2019/3/24 °Ñ¼¼ÄÜ¼Ó½øÈ¥
     }
 
 
@@ -33,7 +33,7 @@ public class tangmen implements Career {
 
     @Override
     public Void getMpdescription() {
-        System.out.println("æ™ºåŠ›å¾ˆé«˜çš„é—¨æ´¾ï¼Œä½¿ç”¨å³¨çœ‰åˆº");
+        System.out.println("ÖÇÁ¦ºÜ¸ßµÄÃÅÅÉ£¬Ê¹ÓÃ¶ëÃ¼´Ì");
         return null;
     }
 
