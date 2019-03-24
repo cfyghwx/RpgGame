@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c539221f-e723-494f-905c-712486036f7a" name="Default Changelist" comment="添加备忘录 抽象工厂 命令模式">
+    <list default="true" id="c539221f-e723-494f-905c-712486036f7a" name="Default Changelist" comment="中介者模式 修改skill weapon属性">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Combat/AbstractCombat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Combat/CombatSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Skill/imp/CommonAttack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemys/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemys/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemys/EnemyA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemys/EnemyA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Clothes/imp/freshClothes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Clothes/imp/freshClothes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Clothes/imp/superiorClothes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Clothes/imp/superiorClothes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Equipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Weapon/imp/EM_Chi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Weapon/imp/EM_Chi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Weapon/imp/SL_gun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Weapon/imp/SL_gun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Weapon/imp/TM_Biao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Weapon/imp/TM_Biao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipment/Weapon/imp/freshWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Equipment/Weapon/imp/freshWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/EM1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/EM1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/EM2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/EM2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/EM3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/EM3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/SL1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/SL1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/SL2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/SL2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/SL3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/SL3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/TM1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/TM1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/TM2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/TM2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Skill/imp/TM3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Skill/imp/TM3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,27 +45,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="53" />
+          <entry key="java" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="53" />
+          <entry key="JAVA" value="130" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="1377" />
-          <entry key="txt" value="16" />
+          <entry key="java" value="2581" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1377" />
-          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="JAVA" value="2581" />
+          <entry key="PLAIN_TEXT" value="41" />
         </counts>
       </usages-collector>
     </session>
@@ -50,25 +77,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Equipment/Equipment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-              <folding>
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="224">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/Clothes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/imp/freshClothes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/imp/superiorClothes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Skill/Skill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="364">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -76,66 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/EM_Chi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/Invoker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#110#111#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/SkillCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding>
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#179#180#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/weaponCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding>
-                <element signature="e#162#163#0" expanded="true" />
-                <element signature="e#198#199#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="196">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -143,26 +131,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/freshWeapon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="224">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/Command.java">
+        <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/SL_gun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="196">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Skill/imp/EM1.java">
+        <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/TM_Biao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="196">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -185,9 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Equipment/Clothes/freshClothes.java" />
-        <option value="$PROJECT_DIR$/src/Equipment/Weapon/EM_Chi.java" />
-        <option value="$PROJECT_DIR$/src/Equipment/Weapon/freshWeapon.java" />
         <option value="$PROJECT_DIR$/src/Equipment/Weapon/SL_棍.java" />
         <option value="$PROJECT_DIR$/src/Equipment/Weapon/TM_Biao.java" />
         <option value="$PROJECT_DIR$/src/Equipment/Clothes/superiorClothes.java" />
@@ -200,8 +194,6 @@
         <option value="$PROJECT_DIR$/src/Skill/EM1.java" />
         <option value="$PROJECT_DIR$/src/Skill/EM2.java" />
         <option value="$PROJECT_DIR$/src/Skill/EM3.java" />
-        <option value="$PROJECT_DIR$/src/Skill/imp/EM3.java" />
-        <option value="$PROJECT_DIR$/src/Equipment/Weapon/imp/TM_Biao.java" />
         <option value="$PROJECT_DIR$/src/Equipment/Clothes/Clothes.java" />
         <option value="$PROJECT_DIR$/src/Skill/Command.java" />
         <option value="$PROJECT_DIR$/src/Skill/Command/PutSkill.java" />
@@ -210,18 +202,37 @@
         <option value="$PROJECT_DIR$/src/Skill/Command/Invoker.java" />
         <option value="$PROJECT_DIR$/src/Skill/IteratorSkill.java" />
         <option value="$PROJECT_DIR$/src/Equipment/abstractFactory/AbstractFactory.java" />
-        <option value="$PROJECT_DIR$/src/Equipment/Weapon/imp/SL_gun.java" />
-        <option value="$PROJECT_DIR$/src/Equipment/Weapon/imp/EM_Chi.java" />
         <option value="$PROJECT_DIR$/src/Equipment/abstractFactory/Sl_factory.java" />
         <option value="$PROJECT_DIR$/src/Equipment/abstractFactory/Em_factory.java" />
         <option value="$PROJECT_DIR$/src/Equipment/abstractFactory/Tm_factory.java" />
         <option value="$PROJECT_DIR$/src/Equipment/abstractFactory/fresh_factory.java" />
-        <option value="$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java" />
-        <option value="$PROJECT_DIR$/src/Equipment/Equipment.java" />
         <option value="$PROJECT_DIR$/src/Command/SkillCommand.java" />
         <option value="$PROJECT_DIR$/src/Command/weaponCommand.java" />
         <option value="$PROJECT_DIR$/src/Command/Invoker.java" />
+        <option value="$PROJECT_DIR$/src/main.java" />
+        <option value="$PROJECT_DIR$/src/Enemys/Enemy.java" />
+        <option value="$PROJECT_DIR$/src/Enemys/EnemyA.java" />
+        <option value="$PROJECT_DIR$/src/Combat/CombatSystem.java" />
+        <option value="$PROJECT_DIR$/src/Combat/AbstractCombat.java" />
         <option value="$PROJECT_DIR$/src/Skill/Skill.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/CommonAttack.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/EM1.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/EM2.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/EM3.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/SL1.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/SL2.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/SL3.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/TM1.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/TM2.java" />
+        <option value="$PROJECT_DIR$/src/Skill/imp/TM3.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Weapon/imp/EM_Chi.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Weapon/imp/freshWeapon.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Weapon/imp/SL_gun.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Weapon/imp/TM_Biao.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Clothes/imp/freshClothes.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Equipment.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java" />
+        <option value="$PROJECT_DIR$/src/Equipment/Clothes/imp/superiorClothes.java" />
       </list>
     </option>
   </component>
@@ -247,6 +258,7 @@
     <option name="height" value="1102" />
   </component>
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -273,13 +285,47 @@
               <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Combat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Command" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Enemys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Equipment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="abstractFactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="Clothes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="Clothes" type="462c0819:PsiDirectoryNode" />
+              <item name="imp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
@@ -287,6 +333,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Equipment" type="462c0819:PsiDirectoryNode" />
               <item name="Weapon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Equipment" type="462c0819:PsiDirectoryNode" />
+              <item name="Weapon" type="462c0819:PsiDirectoryNode" />
+              <item name="imp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="People" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RpgGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="People" type="462c0819:PsiDirectoryNode" />
+              <item name="Career" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RpgGame" type="b2602c69:ProjectViewProjectNode" />
@@ -304,14 +371,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553417495303" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553432679497" />
     <property name="last_opened_file_path" value="D:/tools/jdk1.8.0_161" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="sshConsole" />
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
     <UpdatedFiles>
@@ -327,7 +394,15 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Skill/Skill.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/Career/emei.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/Career/shaolin.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/Career/tangmen.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/Role.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/State/Health.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/State/State.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/State/binsi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -335,8 +410,15 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemy/Enemy.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/Enemy.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/EnemyA.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/EnemyB.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/EnemyC.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/Factory/EnemyAFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/Factory/EnemyBFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/Factory/EnemyCFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/Factory/EnemyFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemys/Factory/Factory.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -344,6 +426,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemy/Enemy.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemy/EnemyA.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemy/EnemyB.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Enemy/EnemyC.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/People/State/Death.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -437,6 +524,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="EnemyA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Enemy.EnemyA" />
+      <module name="RpgGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Enemy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EnemyA" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -447,7 +554,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553410342428</updated>
-      <workItem from="1553410343810" duration="6934000" />
+      <workItem from="1553410343810" duration="16494000" />
     </task>
     <task id="LOCAL-00001" summary="添加备忘录 抽象工厂 命令模式">
       <created>1553416925858</created>
@@ -463,16 +570,24 @@
       <option name="project" value="LOCAL" />
       <updated>1553417161515</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加备忘录 抽象工厂 命令模式">
+      <created>1553417503574</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553417503574</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6934000" />
+    <option name="totallyTimeSpent" value="16494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2564784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2564784" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -490,10 +605,10 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.19610779" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.1981383" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.33643618" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -509,6 +624,11 @@
     <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_WIDTH">
+      <map>
+        <entry key="3" value="115" />
+      </map>
+    </option>
     <option name="COLUMN_ORDER">
       <list>
         <option value="0" />
@@ -523,159 +643,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加备忘录 抽象工厂 命令模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加备忘录 抽象工厂 命令模式" />
+    <MESSAGE value="中介者模式 修改skill weapon属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="中介者模式 修改skill weapon属性" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rpggame.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/EM2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/EM3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/SL1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/SL2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/SL3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/TM1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/TM2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/TM3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/imp/freshClothes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/imp/superiorClothes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/Clothes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/tools/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="838" column="19" selection-start-line="838" selection-start-column="11" selection-end-line="838" selection-end-column="19" />
-          <folding>
-            <element signature="e#31007#31008#0" expanded="true" />
-            <element signature="e#31039#31040#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/IteratorSkill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/abstractFactory/AbstractFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/TM_Biao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/SL_gun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/abstractFactory/Sl_factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/abstractFactory/Em_factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Equipment/abstractFactory/Tm_factory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -704,38 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Skill/imp/EM1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/EM_Chi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/freshWeapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -743,38 +682,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Equipment/Equipment.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="84">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemy/EnemyA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/SkillCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/Enemy/Enemy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="252">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/State/binsi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/State/Death.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/State/Health.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/State/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/Factory/EnemyCFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/Factory/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/Factory/EnemyBFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/Factory/EnemyAFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/Factory/EnemyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/Career/shaolin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/Career/tangmen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/Career/Career.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/Career/emei.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/EnemyB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/EnemyC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/weaponCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="252">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
             <element signature="e#294#295#0" expanded="true" />
           </folding>
         </state>
@@ -782,25 +843,227 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Command/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="140">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/abstractFactory/Em_factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/SkillCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Enemys/EnemyA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Combat/CombatSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Combat/AbstractCombat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/EM1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/EM2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/EM3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/SL1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/SL2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/SL3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/TM1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/CommonAttack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/TM2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Skill/imp/TM3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Skill/Skill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/EM_Chi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/freshWeapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/SL_gun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/imp/TM_Biao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/Clothes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Weapon/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/imp/freshClothes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Equipment/Clothes/imp/superiorClothes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>

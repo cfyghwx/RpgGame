@@ -3,7 +3,9 @@ package Skill.imp;
 import Skill.Skill;
 
 public class EM1 extends Skill{
-    protected int Atk = 100;
+    EM1(){
+        this.Atk = 100;
+        this.name = "月落西山";
+    }
 
-    protected String name = "月落西山";
 }

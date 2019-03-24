@@ -4,7 +4,8 @@ import Equipment.Clothes.Clothes;
 
 public class freshClothes extends Clothes {
 
-    int Def = 100;
-
-    String name = "新手防具";
+    freshClothes() {
+        this.Def = 100;
+        this.name = "新手防具";
+    }
 }

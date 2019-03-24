@@ -3,7 +3,9 @@ package Skill.imp;
 import Skill.Skill;
 
 public class SL1 extends Skill{
-    protected int Atk = 100;
 
-    protected String name = "摩诃无量";
+    SL1(){
+        this.Atk = 100;
+        this.name = "摩诃无量";
+    }
 }

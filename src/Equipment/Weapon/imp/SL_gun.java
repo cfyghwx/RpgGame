@@ -3,7 +3,8 @@ package Equipment.Weapon.imp;
 import Equipment.Weapon.Weapon;
 
 public class SL_gun extends Weapon {
-    int Atk = 200;
-
-    String name = "少林棍";
+    public SL_gun(){
+        this.Atk = 200;
+        this.name = "少林棍";
+    }
 }

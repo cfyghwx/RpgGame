@@ -3,7 +3,8 @@ package Equipment.Clothes.imp;
 import Equipment.Clothes.Clothes;
 
 public class superiorClothes extends Clothes {
-    int Def = 200;
-
-    String name = "高级防具";
+    superiorClothes() {
+        this.Def = 200;
+        this.name = "高级防具";
+    }
 }

@@ -2,11 +2,11 @@ package Equipment;
 
 abstract public class Equipment {
 
-    private int Atk = 0;
+    protected int Atk = 0;
 
-    private int Def = 0;
+    protected int Def = 0;
 
-    private String name;
+    protected String name;
 
     public String getName() {
         return name;

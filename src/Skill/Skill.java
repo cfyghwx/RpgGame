@@ -1,13 +1,13 @@
 package Skill;
 
 public abstract class Skill {
-	private int Atk = 0;
+	 public int Atk = 0;
 
-	private int exp = 0;
+	 public int exp = 0;
 
-	private String name;
+	 public String name = "";
 
-	public int useSkill(){
+	public int useSkill() {
 		int hurt = Atk*(exp/10+1);
 		exp += 1;
 		return hurt;

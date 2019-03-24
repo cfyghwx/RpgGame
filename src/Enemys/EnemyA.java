@@ -26,11 +26,16 @@ public class EnemyA extends Enemy{
         return o;
     }
 
+    @Override
+    public void useAtk() {
+        System.out.println(this.Enemyname + "发起了普通攻击");
+    }
 
     public static void main(String args[]){
         EnemyA a=new EnemyA();
-        EnemyA b=a.clone();
-        System.out.println(b.Attack());
+        System.out.println(a.getAtk());
 
     }
+
+
 }

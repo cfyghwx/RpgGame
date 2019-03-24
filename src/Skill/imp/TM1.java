@@ -3,8 +3,8 @@ package Skill.imp;
 import Skill.Skill;
 
 public class TM1 extends Skill{
-    protected int Atk = 100;
-
-    protected String name = "“ı∑Á∂æ…∑";
-
+    TM1(){
+        this.Atk = 100;
+        this.name = "“ı∑Á∂æ…∑";
+    }
 }
