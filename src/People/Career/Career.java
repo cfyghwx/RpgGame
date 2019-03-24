@@ -1,6 +1,11 @@
 package People.Career;
 
+import People.Role;
+
 public interface Career {
 
-    Void getCareerattribute();
+    Void getMpdescription();
+
+    Role addshuxing(Role role);
+
 }
