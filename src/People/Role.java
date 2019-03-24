@@ -1,10 +1,15 @@
 package People;
 
+import Command.SkillCommand;
+import Command.Invoker;
 import Equipment.Clothes.Clothes;
 import Equipment.Weapon.Weapon;
 import Equipment.abstractFactory.fresh_factory;
 import People.Career.Career;
 import People.Career.emei;
+import People.State.Health;
+import People.State.State;
+import People.State.binsi;
 import Skill.Skill;
 
 import java.util.List;
@@ -13,7 +18,9 @@ public class Role {
 
     private String Rolename;
 
-    private int hp=100;
+    private int Currenthp=100;
+
+    private int maxhp=100;
 
     private int mp=100;
 
@@ -39,6 +46,8 @@ public class Role {
 
     private List<Skill> RoleSkill;
 
+    private State state;
+
     private static Role role;
 
     private Role(String username,Career usercareer){
@@ -48,6 +57,8 @@ public class Role {
         fresh_factory ff=new fresh_factory();
         this.setRoleWeapon(ff.CreateWeapon());
         this.setRoleClothes(ff.CreateClothes());
+        this.setRoleSkill(usercareer.getSkilllistl());
+        this.setState(new Health());
     }
 
     /**
@@ -74,7 +85,8 @@ public class Role {
      */
     public void levelup(){
         this.level++;
-        this.setHp(getHp()+level*10);
+        this.setMaxhp(getMaxhp()+level*10);
+        this.Currenthp=this.maxhp;
         this.setMp(getMp()+level*10);
         this.setAtk(getAtk()+level*5);
         this.setDef(getDef()+level*5);
@@ -83,6 +95,36 @@ public class Role {
         this.setSpeed(getSpeed()+level*3);
     }
 
+    /**
+     * 战斗胜利恢复全部血量
+     */
+    public void Victory(){
+        this.setCurrenthp(this.getMaxhp());
+    }
+
+    /**
+     * 战斗
+     */
+    public int attack(Skill skill){
+        Invoker invoker=new Invoker();
+        SkillCommand sc=new SkillCommand(skill);
+        invoker.setCommand(sc);
+        invoker.buttonWatPressed(this.Rolename);
+        if (((double)this.getCurrenthp()/(double)this.getMaxhp())<0.5){
+            this.setState(new binsi());
+        }
+        else{
+            this.setState(new Health());
+        }
+        return this.getState().doATK(this)+skill.useSkill();
+    }
+
+
+
+    /**
+     * 下面的都是setget方法
+     * @return
+     */
 
     public String getRolename() {
         return Rolename;
@@ -92,12 +134,20 @@ public class Role {
         Rolename = rolename;
     }
 
-    public int getHp() {
-        return hp;
+    public int getCurrenthp() {
+        return Currenthp;
     }
 
-    public void setHp(int hp) {
-        this.hp = hp;
+    public void setCurrenthp(int currenthp) {
+        Currenthp = currenthp;
+    }
+
+    public int getMaxhp() {
+        return maxhp;
+    }
+
+    public void setMaxhp(int maxhp) {
+        this.maxhp = maxhp;
     }
 
     public int getMp() {
@@ -200,11 +250,20 @@ public class Role {
         this.role = role;
     }
 
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
     @Override
     public String toString() {
         return "Role{" +
                 "角色名称='" + Rolename + '\'' +
-                ", hp=" + hp +
+                ", 当前hp=" + Currenthp +
+                ", 最大hp=" + maxhp +
                 ", mp=" + mp +
                 ", Atk=" + Atk +
                 ", def=" + def +
@@ -217,6 +276,7 @@ public class Role {
                 ", 人物武器=" + RoleWeapon +
                 ", 人物衣服=" + RoleClothes +
                 ", 技能=" + RoleSkill +
+                ", 状态=" + state +
                 '}';
     }
 }

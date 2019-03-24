@@ -4,6 +4,7 @@ import People.Career.Career;
 import People.Role;
 import Skill.Skill;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class tangmen implements Career {
@@ -20,15 +21,15 @@ public class tangmen implements Career {
 
     private int speed=20;
 
-    private List<Skill> skilllistl;
+    private List<Skill> skilllist=new ArrayList<>();
 
     public tangmen(){
         // TODO: 2019/3/24 把技能加进去
     }
 
-
+    @Override
     public List<Skill> getSkilllistl() {
-        return skilllistl;
+        return skilllist;
     }
 
     @Override

@@ -13,8 +13,37 @@ public abstract class Skill {
 		return hurt;
 	}
 
+
 	public void getSkill(String username) {
 		System.out.println(username + "สนำรมห" + name);
 	}
 
+	public int getAtk() {
+		return Atk;
+	}
+
+	public void setAtk(int atk) {
+		Atk = atk;
+	}
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return  name ;
+	}
 }

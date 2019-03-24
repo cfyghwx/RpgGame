@@ -3,7 +3,11 @@ package People.Career;
 import People.Career.Career;
 import People.Role;
 import Skill.Skill;
+import Skill.imp.SL1;
+import Skill.imp.SL2;
+import Skill.imp.SL3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class shaolin implements Career {
@@ -20,15 +24,17 @@ public class shaolin implements Career {
 
     private int speed=15;
 
-    private List<Skill> skilllistl;
+    private List<Skill> skilllist=new ArrayList<>();
 
     public shaolin(){
-        // TODO: 2019/3/24 把技能加进去
+        skilllist.add(new SL1());
+        skilllist.add(new SL2());
+        skilllist.add(new SL3());
     }
 
-
+    @Override
     public List<Skill> getSkilllistl() {
-        return skilllistl;
+        return skilllist;
     }
 
     @Override
