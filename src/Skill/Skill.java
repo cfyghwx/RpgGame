@@ -17,5 +17,4 @@ public abstract class Skill {
 		System.out.println(username + "สนำรมห" + name);
 	}
 
-public interface Skill {
 }
