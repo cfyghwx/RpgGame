@@ -4,7 +4,7 @@ import Skill.Skill;
 
 public class SL1 extends Skill{
 
-    SL1(){
+    public SL1(){
         this.Atk = 100;
         this.name = "д╕з╜нча©";
     }
