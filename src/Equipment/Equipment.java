@@ -2,9 +2,19 @@ package Equipment;
 
 abstract public class Equipment {
 
-    int Atk;
+    private int Atk = 0;
 
-    int Def;
+    private int Def = 0;
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getAtk() {
         return Atk;

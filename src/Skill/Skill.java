@@ -1,5 +1,20 @@
 package Skill;
 
-public interface Skill {
-	ddd
+public abstract class Skill {
+	private int Atk = 0;
+
+	private int exp = 0;
+
+	private String name;
+
+	public int useSkill(){
+		int hurt = Atk*(exp/10+1);
+		exp += 1;
+		return hurt;
+	}
+
+	public void getSkill(String username) {
+		System.out.println(username + "สนำรมห" + name);
+	}
+
 }
