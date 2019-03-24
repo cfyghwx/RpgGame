@@ -6,7 +6,7 @@ public class main {
     public static void main(String args[]){
         emei e=new emei();
         shaolin s=new shaolin();
-        String username="éœžä¹‹ä¸˜è¯—ç¾½å‡‰äº†";
+        String username="Ï¼Ö®ÇðÊ«ÓðÁ¹ÁË";
         Role r=Role.getRole(username,s);
         System.out.println(r.toString());
 

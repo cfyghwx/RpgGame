@@ -8,7 +8,7 @@ import java.util.List;
 
 public class shaolin implements Career {
 
-    private String Careername="å°‘æ—æ´¾";
+    private String Careername="ÉÙÁÖÅÉ";
 
     private int Atk=200;
 
@@ -23,7 +23,7 @@ public class shaolin implements Career {
     private List<Skill> skilllistl;
 
     public shaolin(){
-        // TODO: 2019/3/24 æŠŠæŠ€èƒ½åŠ è¿›å»
+        // TODO: 2019/3/24 °Ñ¼¼ÄÜ¼Ó½øÈ¥
     }
 
 
@@ -33,7 +33,7 @@ public class shaolin implements Career {
 
     @Override
     public Void getMpdescription() {
-        System.out.println("åŠ›é‡å¾ˆé«˜çš„é—¨æ´¾ï¼Œä½¿ç”¨å°‘æ—æ£æ³•");
+        System.out.println("Á¦Á¿ºÜ¸ßµÄÃÅÅÉ£¬Ê¹ÓÃÉÙÁÖ¹÷·¨");
         return null;
     }
 
