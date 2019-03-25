@@ -11,4 +11,8 @@ public class Clothes extends Equipment {
         clothes.setName(getName());
         return clothes;
     }
+
+    public void levelup(){
+        this.Def += 10;
+    }
 }

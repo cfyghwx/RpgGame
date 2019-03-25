@@ -31,4 +31,6 @@ abstract public class Equipment {
     public void setDef(int def) {
         Def = def;
     }
+
+
 }
