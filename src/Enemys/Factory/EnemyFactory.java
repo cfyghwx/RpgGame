@@ -14,15 +14,15 @@ public class EnemyFactory {
             enemy=pool.get(monstername);
         }
         else{
-            if (monstername.equals("AAA")){
+            if (monstername.equals("ÂäÆÇ×ÓµÜ")){
                 EnemyAFactory fa=new EnemyAFactory();
                 enemy=fa.CreateEnemy();
             }
-            if (monstername.equals("BBB")){
+            if (monstername.equals("ÍáÃÅÐ°µÀ")){
                 EnemyBFactory fb=new EnemyBFactory();
                 enemy=fb.CreateEnemy();
             }
-            if (monstername.equals("CCC")){
+            if (monstername.equals("¹í¹ÖÑýÄ§")){
                 EnemyCFactory fc=new EnemyCFactory();
                 enemy=fc.CreateEnemy();
             }

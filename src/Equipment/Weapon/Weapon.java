@@ -19,4 +19,10 @@ public class Weapon extends Equipment {
     public void levelup(){
         this.Atk += 10;
     }
+
+    public int getAtk(){
+        return this.Atk;
+    }
+
+
 }

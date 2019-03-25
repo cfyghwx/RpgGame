@@ -3,7 +3,7 @@ package Enemys;
 public class EnemyC extends Enemy {
 
     public EnemyC(){
-        this.Enemyname="CCC";
+        this.Enemyname="鬼怪妖魔";
         this.atk=300;
         this.def=10;
         this.hp=3300;
@@ -16,6 +16,11 @@ public class EnemyC extends Enemy {
     }
 
     @Override
+    public void useAtk() {
+        System.out.println(this.Enemyname + "发起了普通攻击");
+    }
+
+    @Override
     public EnemyC clone(){
         EnemyC o = null;
         try {
@@ -24,5 +29,15 @@ public class EnemyC extends Enemy {
             System.out.println(e.toString());
         }
         return o;
+    }
+
+    @Override
+    public String toString() {
+        return "敌人名字:" + Enemyname +
+                ",hp=" + hp +
+                ", mp=" + mp +
+                ", atk=" + atk +
+                ", def=" + def ;
+
     }
 }

@@ -7,4 +7,9 @@ public class TM_Biao extends Weapon {
         this.Atk = 200;
         this.name = "ÌÆÃÅïÚ";
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

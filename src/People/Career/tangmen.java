@@ -3,6 +3,9 @@ package People.Career;
 import People.Career.Career;
 import People.Role;
 import Skill.Skill;
+import Skill.imp.TM1;
+import Skill.imp.TM2;
+import Skill.imp.TM3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +28,9 @@ public class tangmen implements Career {
 
     public tangmen(){
         // TODO: 2019/3/24 把技能加进去
+        skilllist.add(new TM1());
+        skilllist.add(new TM2());
+        skilllist.add(new TM3());
     }
 
     @Override

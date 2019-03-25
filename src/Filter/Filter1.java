@@ -7,8 +7,13 @@ public class Filter1 implements Filter{
 
     @Override
     public boolean hasanyMGC(String username) {
-        Pattern p =Pattern.compile("鏁忔劅");
+        Pattern p =Pattern.compile("敏感");
         return p.matcher(username).find();
+    }
+
+    public static void main(String args[]){
+        Filter1 c=new Filter1();
+        System.out.println(c.hasanyMGC("敏感词系统"));
     }
 
 }

@@ -28,12 +28,12 @@ public class CombatSystem extends AbstractCombat{
 
     @Override
     public int EnemyAttackRole(int AtkEnemy) {
-        int hp = role.getHp();
+        int hp = role.getCurrenthp();
         int hurt = AtkEnemy - role.getDef();
         if (hurt>0){
-            role.setHp(hp - hurt);
+            role.setCurrenthp(hp - hurt);
         }
-        if (role.getHp()>0){
+        if (role.getCurrenthp()>0){
             return 1;
         }else {
             System.out.println("¶Ô·½É±ËÀÁËÄã£¡");

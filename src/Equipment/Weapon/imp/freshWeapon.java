@@ -8,4 +8,9 @@ public class freshWeapon extends Weapon {
         this.name = "ĞÂÊÖÎäÆ÷";
         this.Atk = 100;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

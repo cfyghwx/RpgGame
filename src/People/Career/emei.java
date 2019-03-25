@@ -3,6 +3,9 @@ package People.Career;
 import People.Career.Career;
 import People.Role;
 import Skill.Skill;
+import Skill.imp.EM1;
+import Skill.imp.EM2;
+import Skill.imp.EM3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +27,9 @@ public class emei implements Career {
     private List<Skill> skilllist=new ArrayList<>();
 
     public emei(){
-        // TODO: 2019/3/24 把技能加进去
+        skilllist.add(new EM1());
+        skilllist.add(new EM2());
+        skilllist.add(new EM3());
     }
 
     @Override

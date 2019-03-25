@@ -7,4 +7,9 @@ public class EM_Chi extends Weapon {
         this.name = "∂Î√º¥Ã";
         this.Atk = 200;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

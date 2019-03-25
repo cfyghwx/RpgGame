@@ -100,6 +100,11 @@ public class Role {
      */
     public void Victory(){
         this.setCurrenthp(this.getMaxhp());
+        this.setExp(getExp()+10);
+        if(this.getExp()>=100){
+            this.setExp(this.getExp()%100);
+            levelup();
+        };
     }
 
     /**
@@ -116,7 +121,8 @@ public class Role {
         else{
             this.setState(new Health());
         }
-        return this.getState().doATK(this)+skill.useSkill();
+        return this.getState().doATK(this)+skill.useSkill()+this.getRoleWeapon().getAtk()+5*
+                this.getStrength()+6*this.getSpeed()+3*this.getIntl();
     }
 
 

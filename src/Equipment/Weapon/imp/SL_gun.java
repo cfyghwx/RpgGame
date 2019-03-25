@@ -7,4 +7,9 @@ public class SL_gun extends Weapon {
         this.Atk = 200;
         this.name = "ÉÙÁÖ¹÷";
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
