@@ -6,7 +6,7 @@ public class EnemyB extends Enemy{
         this.Enemyname="Õ·√≈–∞µ¿";
         this.atk=300;
         this.def=10;
-        this.hp=3300;
+        this.hp=2000;
         this.mp=300;
     }
 

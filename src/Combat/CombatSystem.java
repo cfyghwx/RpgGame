@@ -21,7 +21,7 @@ public class CombatSystem extends AbstractCombat{
         if (enemy.getHp()>0){
             return 1;  //战斗继续
         }else {
-            System.out.println("你杀死了对方！");
+            System.out.println("你杀死了对方并获得了大量经验！");
             return 0;  //敌人死亡，战斗结束
         }
     }

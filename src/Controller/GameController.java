@@ -1,7 +1,15 @@
 package Controller;
 
+import Combat.CombatSystem;
+import Command.Invoker;
+import Command.SkillCommand;
+import Command.weaponCommand;
+import Enemys.CloneEnemy;
+import Enemys.Enemy;
+import Enemys.EnemyA;
 import Equipment.Clothes.imp.freshClothes;
 import Equipment.Clothes.imp.superiorClothes;
+import Equipment.Weapon.Weapon;
 import Equipment.Weapon.imp.EM_Chi;
 import Equipment.Weapon.imp.SL_gun;
 import Equipment.Weapon.imp.TM_Biao;
@@ -12,12 +20,17 @@ import People.Career.emei;
 import People.Career.shaolin;
 import People.Career.tangmen;
 import People.Role;
+import Skill.Skill;
+import Skill.imp.CommonAttack;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class GameController {
 
-    public void gogame(){
+    public void gogame() throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         System.out.println("欢迎您来到本游戏，请输入你的名字");
         Scanner i=new Scanner(System.in);
         String username=i.nextLine();
@@ -62,19 +75,19 @@ public class GameController {
                 System.out.println("恭喜您加入"+r.getRoleCareer().toString());
                 break;
             default:
-                System.out.println("输入无效请从新选择");
+                System.out.println("输入无效请重新选择");
         }
         return r;
     }
 
-    public int selectaction(Role r,Scanner scanner){
+    public int selectaction(Role r,Scanner scanner) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         int flag=1;
         System.out.println("请输入数字代表你要做的行动：1.外出逛逛,2.查看人物状态，3.更换新手装备，4" +
                 "更换新手防具，5.更换门派武器，6.更换门派防具，7.锻造武器,8.退出");
         String i =scanner.nextLine();
         switch (i){
             case "1":
-                System.out.println("111");
+                fight(r,scanner);
                 break;
             case "2":
                 System.out.println(r.toString());
@@ -109,11 +122,88 @@ public class GameController {
                 r.getRoleWeapon().levelup();
                 System.out.println("锻造成功，当前武器攻击力"+r.getRoleWeapon().getAtk());
                 break;
+
             default:
                 flag =0;
 
         }
         return flag;
+    }
+
+    public void fight(Role r,Scanner scanner) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
+        CloneEnemy cloneEnemy = new CloneEnemy();
+        Random random = new Random();
+        int ene = random.nextInt(100);
+        Enemy enemy;
+        if (ene>80){
+            enemy = cloneEnemy.getEnemyclone("鬼怪妖魔");
+        }else if (ene>50){
+            enemy = cloneEnemy.getEnemyclone("歪门邪道");
+        }else {
+            enemy = cloneEnemy.getEnemyclone("落魄子弟");
+        }
+        System.out.println("遭遇"+enemy.getEnemyname()+"抢劫！");
+        System.out.println("请选择你的行动：1、锤他 2、逃跑 3、跪地求饶");
+        String i = scanner.nextLine();
+        switch (i){
+            case "1":
+                combat(r,scanner,enemy);
+                break;
+            case "2":
+                System.out.println("你返回了城镇。");
+                selectaction(r,scanner);
+                break;
+            case "3":
+                System.out.println("他抢光了你的东西并杀死了你！游戏结束！");
+                gogame();
+                break;
+            default:
+            System.out.println("你返回了城镇。");
+        }
+    }
+
+    public void combat(Role r,Scanner scanner,Enemy enemy) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+        List<Skill> skills = r.getRoleSkill();
+        CombatSystem combatSystem = new CombatSystem(enemy,r);
+        Skill commom = new CommonAttack();
+        while (true){
+            System.out.println("请选择你要使用的攻击：1、"+commom.getName()+" 2、"+skills.get(0).getName()
+                    + " 3、"+skills.get(1).getName() + " 4、" + skills.get(2).getName());
+            int atk = 0;
+            String i = scanner.nextLine();
+            switch (i){
+                case "1":
+                    atk = r.attack(commom);
+                    break;
+                case "2":
+                    atk = r.attack(skills.get(0));
+                    break;
+                case "3":
+                    atk = r.attack(skills.get(1));
+                    break;
+                case "4":
+                    atk = r.attack(skills.get(2));
+                    break;
+                default:
+                    System.out.println("你放弃了攻击！");
+            }
+            int result = combatSystem.roleAttackEnemy(atk);
+            if (result == 0){
+                r.Victory();
+                break;
+            }else {
+                int ss = combatSystem.EnemyAttackRole(enemy.Attack());
+                Invoker invoker = new Invoker();
+                SkillCommand skillCommand = new SkillCommand(commom);
+                invoker.setCommand(skillCommand);
+                invoker.buttonWatPressed(enemy.getEnemyname());
+                if (ss == 0) {
+                        gogame();
+                        break;
+                    }
+                }
+        }
+        selectaction(r,scanner);
     }
 
 }

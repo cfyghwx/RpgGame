@@ -2,6 +2,7 @@ package People;
 
 import Command.SkillCommand;
 import Command.Invoker;
+import Command.weaponCommand;
 import Equipment.Clothes.Clothes;
 import Equipment.Weapon.Weapon;
 import Equipment.abstractFactory.fresh_factory;
@@ -18,9 +19,9 @@ public class Role {
 
     private String Rolename;
 
-    private int Currenthp=100;
+    private int Currenthp=500;
 
-    private int maxhp=100;
+    private int maxhp=500;
 
     private int mp=100;
 
@@ -93,6 +94,7 @@ public class Role {
         this.setStrength(getStrength()+level*3);
         this.setIntl(getIntl()+level*3);
         this.setSpeed(getSpeed()+level*3);
+        System.out.println("ÄãÉý¼¶ÁË£¡");
     }
 
     /**
@@ -100,7 +102,7 @@ public class Role {
      */
     public void Victory(){
         this.setCurrenthp(this.getMaxhp());
-        this.setExp(getExp()+10);
+        this.setExp(getExp()+50);
         if(this.getExp()>=100){
             this.setExp(this.getExp()%100);
             levelup();
@@ -112,19 +114,23 @@ public class Role {
      */
     public int attack(Skill skill){
         Invoker invoker=new Invoker();
-        SkillCommand sc=new SkillCommand(skill);
-        invoker.setCommand(sc);
+        if (skill.getName()=="ÆÕÍ¨¹¥»÷"){
+            weaponCommand ws = new weaponCommand(getRoleWeapon());
+            invoker.setCommand(ws);
+        }else {
+            SkillCommand sc=new SkillCommand(skill);
+            invoker.setCommand(sc);
+        }
         invoker.buttonWatPressed(this.Rolename);
         if (((double)this.getCurrenthp()/(double)this.getMaxhp())<0.5){
             this.setState(new binsi());
         }
         else{
             this.setState(new Health());
-        }
+    }
         return this.getState().doATK(this)+skill.useSkill()+this.getRoleWeapon().getAtk()+5*
                 this.getStrength()+6*this.getSpeed()+3*this.getIntl();
     }
-
 
 
     /**
